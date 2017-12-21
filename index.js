@@ -1,6 +1,6 @@
 var map = require("./map");
 
-var getCountryCode = function(localeString) {
+var getCountryCode = exports.getCountryCode = function(localeString) {
     var components = localeString.split("_");
     if (components.length == 2) {
         return components.pop();
